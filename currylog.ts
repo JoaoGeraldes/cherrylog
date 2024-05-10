@@ -1,18 +1,29 @@
 function currylog(...args) {
-
-
-  return function(color) {
+  return function (color) {
     const palette = {
       red: {
         background: "red",
-        text: "white"
+        text: "white",
       },
       green: {
         background: "green",
-        text: "white"
-      }
-    }
-    const css = `background: ${palette?.[color]?.background || "black"}; color: ${palette?.[color]?.text || "white"}; padding: 2px; border-radius:2px`;
+        text: "white",
+      },
+      yellow: {
+        background: "yellow",
+        text: "black",
+      },
+      orange: {
+        background: "orange",
+        text: "white",
+      },
+    };
+
+    const css = `
+    background: ${palette?.[color]?.background || "black"}; 
+    color: ${palette?.[color]?.text || "white"}; 
+    padding: 2px; 
+    border-radius:2px`;
 
     if (typeof args[0] === "string") {
       const clonedArgs = [...args];
@@ -21,14 +32,12 @@ function currylog(...args) {
       return;
     }
     console.log("%c", css, ...args);
-  }
-
-
-
+  };
 }
 
 currylog("aaa", "bbb", "ccc")("green");
 currylog("num", 1, 2)("red");
+currylog("num", 1, 2)("orange");
 currylog("logging", {
-  name: "John"
-})("yellow")
+  name: "John",
+})("yellow");

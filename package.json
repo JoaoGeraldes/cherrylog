@@ -1,0 +1,22 @@
+{
+  "name": "currylog",
+  "version": "1.0.0",
+  "description": "colorize your console.log",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "color",
+    "console.log",
+    "color",
+    "log",
+    "colorize",
+    "console.log"
+  ],
+  "author": "João Geraldes",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^5.4.5"
+  }
+}
