@@ -1,8 +1,8 @@
 {
-  "name": "currylog",
+  "name": "cherrylog",
   "version": "1.0.0",
   "description": "colorize your console.log",
-  "main": "dist/currylog.js",
+  "main": "dist/cherrylog.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx tsc"

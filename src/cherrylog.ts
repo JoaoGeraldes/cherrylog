@@ -18,15 +18,15 @@ const palette: Record<string, Record<string, string>> = {
 };
 
 /**
- * 
- * @param args 
- * @returns 
- * 
+ *
+ * @param args
+ * @returns
+ *
  * @example
- * currylog("a", "b", "c")("green");
- * currylog("a", 1, 2)("red");
+ * cherrylog("a", "b", "c")("green");
+ * cherrylog("a", 1, 2)("red");
  */
-export function currylog(...args: unknown[]) {
+export function cherrylog(...args: unknown[]) {
   return function (color: string) {
     const css = `
     background: ${palette?.[color]?.background || "black"}; 
@@ -44,11 +44,9 @@ export function currylog(...args: unknown[]) {
   };
 }
 
-currylog("a", "b", "c")("green");
-currylog("a", 1, 2)("red");
-currylog("b", 1, 2)("orange");
-currylog("logging", {
+cherrylog("a", "b", "c")("green");
+cherrylog("a", 1, 2)("red");
+cherrylog("b", 1, 2)("orange");
+cherrylog("logging", {
   name: "John",
 })("yellow");
-
-
