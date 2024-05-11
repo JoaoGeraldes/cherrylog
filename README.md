@@ -19,7 +19,7 @@ cherrylog("Simply red!", 1, 2)("red");
 cherrylog("Logging an object...", { name: "John" })(); // defaults to the delicious cherry color
 ```
 
-![image info](example.jpg)
+![image info](https://raw.githubusercontent.com/JoaoGeraldes/cherrylog/2.0.0/example.jpg?token=GHSAT0AAAAAACQFCSPTZFXVZL7UDO7UT6RGZR7QQTA)
 
 # Development
 
