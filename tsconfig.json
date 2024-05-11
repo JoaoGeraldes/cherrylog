@@ -2,7 +2,7 @@
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules", "**/node_modules/*"],
   "compilerOptions": {
-    "target": "es5",
+    "target": "es2015",
     "module": "System",
     "noImplicitAny": true,
     "removeComments": false,
