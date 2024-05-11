@@ -1,6 +1,6 @@
 {
   "name": "cherrylog",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "colorize your console.log",
   "main": "dist/cherrylog.js",
   "scripts": {
