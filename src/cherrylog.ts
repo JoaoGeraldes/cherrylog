@@ -1,5 +1,4 @@
 import { COLORS, CSSColors } from "./colors";
-
 /**
  *
  * @param args
@@ -11,7 +10,7 @@ import { COLORS, CSSColors } from "./colors";
  * cherrylog("Simply red!", 1, 2)("red");
  * cherrylog("Logging an object...", { name: "John" })(); // logs with default cherry color
  */
-function cherrylog(...args: unknown[]) {
+export function cherrylog(...args: unknown[]) {
   function logger(color?: CSSColors) {
     const hasValidColor = COLORS.has(color);
     const textColor = calculateTextColor(color);
@@ -116,8 +115,3 @@ function colorNameToHex(colorName: CSSColors) {
     return "#000000";
   }
 }
-
-cherrylog("I'm blue Da ba dee da ba di")("blue");
-cherrylog("It ain't easy being green.", true)("green");
-cherrylog("Simply red!", 1, 2)("red");
-cherrylog("Logging an object...", { name: "John" })();
