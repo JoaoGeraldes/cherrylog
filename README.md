@@ -1,4 +1,5 @@
-![logo](cherrylog_logo.png)
+![logo](https://raw.githubusercontent.com/JoaoGeraldes/cherrylog/main/cherrylog_logo.png)
+
 ## 📙Description
 
 Turn debugging from a chore into a carnival with colorized logs that’ll make bugs dance away!
@@ -35,8 +36,8 @@ npm version patch
 #### Test locally, before publish
 
 - (within the project's directory)
-   - `npm run build`
-   - `npm link`
+  - `npm run build`
+  - `npm link`
 - (outside the project's directory - somewhere else to test our latest package changes)
   - `npm link cherrylog` (equivalent to npm install cherrylog)
   - `import cherrylink from "cherryling"`
