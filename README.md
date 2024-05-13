@@ -15,6 +15,9 @@ _Light, Clean & Simple_
 ## 🛠️ Usage
 
 ```js
+import cherrylink from "cherrylink"
+
+
 cherrylog("I'm blue Da ba dee da ba di")("blue");
 cherrylog("It ain't easy being green.", true)("green");
 cherrylog("Simply red!", 1, 2)("red");
