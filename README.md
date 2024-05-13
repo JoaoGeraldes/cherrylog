@@ -42,4 +42,4 @@ npm version patch
   - `npm link`
 - (outside the project's directory - somewhere else to test our latest package changes)
   - `npm link cherrylog` (equivalent to npm install cherrylog)
-  - `import cherrylink from "cherrylink"`
+  - `import cherrylog from "cherrylog"`
