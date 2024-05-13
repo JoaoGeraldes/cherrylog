@@ -30,3 +30,12 @@ npm run build
 ### 🔂 Increment version before publishing package
 
 npm version patch
+
+#### Test locally, before publish
+
+- (within the project's directory)
+   - `npm run build`
+   - `npm link`
+- (outside the project's directory - somewhere else to test our latest package changes)
+  - `npm link cherrylog` (equivalent to npm install cherrylog)
+  - `import cherrylink from "cherryling"`
