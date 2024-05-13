@@ -1,3 +1,4 @@
+![logo](cherrylog_logo.png)
 ## 📙Description
 
 Turn debugging from a chore into a carnival with colorized logs that’ll make bugs dance away!
