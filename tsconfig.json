@@ -3,7 +3,7 @@
   "exclude": ["node_modules", "**/node_modules/*"],
   "compilerOptions": {
     "target": "es2015",
-    "module": "System",
+    "module": "es2015",
     "noImplicitAny": true,
     "removeComments": false,
     "preserveConstEnums": true,
