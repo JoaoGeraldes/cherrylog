@@ -27,19 +27,45 @@ cherrylog("Logging an object...", { name: "John" })(); // defaults to the delici
 
 # Development
 
-### 📦 BUILD (builds to /dist directory)
+# 1. 📦 Build (`/dist`)
 
-npm run build
+1. **Without compression/minification**
 
-### 🔂 Increment version before publishing package
+   `npm run build`
 
-npm version patch
+2. **With compression/minification**
 
-#### Test locally, before publish
+   `npm-run-all build minify`
 
-- (within the project's directory)
-  - `npm run build`
-  - `npm link`
-- (outside the project's directory - somewhere else to test our latest package changes)
-  - `npm link cherrylog` (equivalent to npm install cherrylog)
-  - `import cherrylog from "cherrylog"`
+   By default, your compiled version goes to `/dist` directory.
+
+# 2. 🚀 Publish
+
+### 1. Test locally (before publish)
+
+_within the project's directory_
+
+1. `npm run build` or `npm-run-all build minify`
+1. `npm link`
+
+   _outside the project's directory - somewhere else to test our latest package changes_
+
+1. `npm link my-package` (mimics the _npm install my-package_)
+
+1. ```js
+   import myPackage from "my-package";
+   ```
+
+### 2. Deploy to npm (https://www.npmjs.com/)
+
+1. Increment version before publishing
+
+   `npm version patch`
+
+1. Build (with or without compression)
+
+   `npm-run-all build minify` or `npm run build`
+
+1. Deploy to npm
+
+   `npm publish`
